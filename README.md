@@ -17,3 +17,5 @@ To generate maps of hMinCrit, run genhCritMaps.m. Uncomment the necessary lines 
 
 Computational Requirements:
 
+Most of the code can be run on a standard desktop computer. However, the script to generate the $h_{minCrit}$ maps, getHmap_par(), is best run on a cluster. If a cluster is not available, a dedicated workstation must be used, but the runtime could be much higher for each case. A way to check correctness and use lesser time is to increase the xStep parameter in getHmap_par.m. Larger values of xStep simply omits several points and samples the 2D cartesian grid at a few points only, reducing runtime. 
+
